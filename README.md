@@ -1,5 +1,5 @@
 # Estimate_Speed
-Estimate_Speed
+First, we can calculate the Euclidean distance between two points, and then we can use this distance along with the time elapsed to compute the speed of an object.
 # Object Detection
 To perform object detection using a `pre-trained model`, we need to load the model and run inference on an input image. We can achieve this by defining the path to the model file using the `MODEL_PATH` variable. If we're using a `pre-trained model`, we can simply specify the version we want, such as yolov8n.pt.
 
