@@ -7,11 +7,15 @@ Once we have the model loaded, we can process an image by converting it into a n
 
 Overall, the process of performing object detection using a pre-trained model involves loading the model, processing an input image, and obtaining the resulting predictions. By following these steps, we can quickly and accurately detect objects in a wide variety of visual contexts.
 
+
+# Object Tracking
+Using ByteTRACK
+
+# Installation
 Install Yolov8
 ```ruby
 pip install ultralytics
 ```
-# Object Tracking
 Install ByteTRACK
 ```ruby
 pip install bytetracker
