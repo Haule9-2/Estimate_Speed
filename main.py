@@ -1,7 +1,3 @@
-import Record as Re
-from EstimateSpeed import speed
-from Perspective import transform
-from dataclasses import dataclass
 import cv2
 import numpy as np
 from numpy import ndarray
@@ -15,6 +11,12 @@ from supervision.tools.detections import Detections, BoxAnnotator
 from ultralytics import YOLO
 from yolox.tracker.byte_tracker import BYTETracker, STrack
 from tqdm import tqdm
+from dataclasses import dataclass
+
+
+import record as Re
+from estimate_speed import speed
+from Perspective import transform
 
 
 @dataclass(frozen=True)
