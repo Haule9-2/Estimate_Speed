@@ -14,9 +14,9 @@ from tqdm import tqdm
 from dataclasses import dataclass
 
 
-import record as Re
+from record import record
 from estimate_speed import speed
-from Perspective import transform
+from perspective import transform
 
 
 @dataclass(frozen=True)
@@ -151,7 +151,7 @@ with VideoSink(RESULT_VIDEO_PATH, video_info) as sink:
                 if (cal_speed.get((tracker_id,) if isinstance(tracker_id, int) else tracker_id) or previous_speed.get(
                         tracker_id)) >= speedLimit:
                     print("ok")
-                    Re.record(int(tracker_id), cal_speed.get(
+                    record(int(tracker_id), cal_speed.get(
                         (tracker_id,) if isinstance(tracker_id, int) else tracker_id) or previous_speed.get(tracker_id),
                               blended, frame, current_positions, CAR_IMG_PATH, CAR_PLATES_PATH)
             except TypeError:
