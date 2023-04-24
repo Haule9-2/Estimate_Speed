@@ -18,4 +18,3 @@ def speed(previous_positions, current_positions, video_info):
                 speed_kph = 0
             object_speeds[tracker_id] = float(speed_kph)
     return object_speeds
-l
